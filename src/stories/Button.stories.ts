@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from "./Button";
+import Button from "../components/Button/Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -19,11 +19,5 @@ type Story = StoryObj<typeof meta>;
 export const HelloWorld: Story = {
   args: {
     label: "Hello world!",
-  },
-};
-
-export const ClickMe: Story = {
-  args: {
-    label: "Click me!",
   },
 };
